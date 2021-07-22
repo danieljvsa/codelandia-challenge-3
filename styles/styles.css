@@ -274,6 +274,9 @@ button:focus, input:focus {
     width: 350px !important;
     height: 250px !important;
   }
+  .footer .footer-div h3 {
+    margin-bottom: 0 !important;
+  }
   .footer form {
     padding-left: 220px !important;
     padding-right: 220px !important;
