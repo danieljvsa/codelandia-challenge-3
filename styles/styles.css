@@ -108,7 +108,7 @@ button:focus, input:focus {
   line-height: 24px;
 }
 
-#container .container-header :hover {
+#container .container-header button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -144,6 +144,7 @@ button:focus, input:focus {
   position: relative;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 #container .container-main .main-content .card .bg {
@@ -215,15 +216,17 @@ button:focus, input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 485px;
+  padding-left: 435px;
+  padding-right: 435px;
   padding-bottom: 80px;
+  width: 100%;
 }
 
 #container .footer form input {
   background-color: var(--white);
   border-radius: 6px;
   padding: 20px 15px 20px 15px;
-  width: 471px;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -232,8 +235,7 @@ button:focus, input:focus {
 }
 
 #container .footer form .textarea {
-  height: 123px;
-  padding: 0px 15px 70px 15px;
+  padding: 20px 15px 70px 15px;
 }
 
 #container .footer form button {
@@ -242,7 +244,7 @@ button:focus, input:focus {
           box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
   border-radius: 5px;
   padding: 13px 0;
-  width: 471px;
+  width: 100%;
   text-align: center;
   color: #f6f6f6;
   font-family: 'Lato', sans-serif;
@@ -251,7 +253,7 @@ button:focus, input:focus {
   line-height: 24px;
 }
 
-#container .footer form :hover {
+#container .footer form button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -272,17 +274,55 @@ button:focus, input:focus {
     width: 350px !important;
     height: 250px !important;
   }
+  .footer form {
+    padding-left: 220px !important;
+    padding-right: 220px !important;
+    padding-bottom: 80px !important;
+  }
 }
 
 @media (max-width: 768px) {
   #container {
     width: 100%;
   }
+  #container .container-header {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+    padding: 20px 0 !important;
+  }
   #container .container-header h1 {
     font-size: 34px !important;
   }
   #container .container-header p {
     font-size: 16px !important;
+  }
+  #container .container-header .img {
+    margin-top: 54px !important;
+    margin-bottom: 44px !important;
+    width: 350px !important;
+    height: 220px !important;
+  }
+  #container .container-header button {
+    font-size: 18px !important;
+  }
+  .container-main .main-content {
+    margin: 0 50px !important;
+    padding: 75px 0 !important;
+  }
+  .container-main .main-content .content-card h3 {
+    font-size: 26px !important;
+  }
+  .container-main .main-content .content-card p {
+    font-size: 16px !important;
+  }
+  .footer .footer-div h3 {
+    font-size: 30px !important;
+  }
+  .footer form {
+    padding: 20px !important;
+  }
+  .footer form button {
+    font-size: 18px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

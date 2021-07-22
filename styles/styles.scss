@@ -98,7 +98,7 @@ button:focus, input:focus {
             line-height: 24px;
         }
 
-        :hover{
+        button:hover{
             opacity: 0.8;
             cursor: pointer;
         }
@@ -121,7 +121,7 @@ button:focus, input:focus {
                 flex-grow: 1;
                 position: relative;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-                
+                cursor: pointer;
                 .bg{
                     height: 222px;
                 }
@@ -178,22 +178,23 @@ button:focus, input:focus {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0 485px;
+            padding-left: 435px;
+            padding-right: 435px;
             padding-bottom: 80px;
+            width: 100%;
 
             input{
                 background-color: var(--white);
                 border-radius: 6px;
                 padding: 20px 15px 20px 15px;
-                width: 471px;
+                width: 100%;
                 align-items: center;
                 margin: 15px 0;
                 outline: none;
             }
 
             .textarea{
-                height: 123px;
-                padding: 0px 15px 70px 15px;
+                padding: 20px 15px 70px 15px;
             }
 
             button{
@@ -201,7 +202,7 @@ button:focus, input:focus {
                 box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
                 border-radius: 5px;
                 padding: 13px 0;
-                width: 471px;
+                width: 100%;
                 text-align: center;
                 color: #f6f6f6;
                 font-family: 'Lato', sans-serif;
@@ -210,7 +211,7 @@ button:focus, input:focus {
                 line-height: 24px;
             }  
             
-            :hover{
+            button:hover{
                 opacity: 0.8;
                 cursor: pointer;
             }
@@ -233,12 +234,24 @@ button:focus, input:focus {
             height: 250px !important;
         }
     }
+    .footer{
+
+        form{
+            padding-left: 220px !important;
+            padding-right: 220px !important;
+            padding-bottom: 80px !important;
+            
+        }
+    }
 }
 
 @media (max-width: 768px){
     #container{
         width: 100%;
         .container-header{
+            margin-left: 60px !important;
+            margin-right: 60px !important;
+            padding: 20px 0 !important;
             
             h1{
                 font-size: 34px !important;
@@ -246,6 +259,51 @@ button:focus, input:focus {
 
             p{
                 font-size: 16px !important;
+            }
+
+            .img{
+                margin-top: 54px !important;
+                margin-bottom: 44px !important;
+                width: 350px !important;
+                height: 220px !important;
+            }
+
+            button{
+                font-size: 18px !important;
+            }
+        }
+    }
+
+    .container-main{
+        .main-content{
+            margin: 0 50px !important;
+            padding: 75px 0 !important;
+
+            .content-card{
+
+                h3{
+                    font-size: 26px !important;
+                }
+
+                p{
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .footer-div{
+            h3{
+                font-size: 30px !important;
+            }
+        }
+
+        form{
+            padding: 20px !important;
+            
+            button{
+                font-size: 18px !important;
             }
         }
     }
