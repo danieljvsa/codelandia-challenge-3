@@ -1,6 +1,6 @@
-<p align="center">
-  <h1>Codelândia</h1>
-</p>
+<h1 align="center">
+  Codelândia
+</h1>
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Desafio&message=03&color=8257E5&labelColor=000000" alt="Desafio 3" />
